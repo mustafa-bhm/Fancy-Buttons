@@ -3,7 +3,7 @@
   flex-direction: column;
   height: 100vh;
   transition: all 300ms linear;
-  background-color: rgb(136, 93, 40);
+  background-color: rgb(247, 235, 220);
 }
 
 .App > h1 {
@@ -11,6 +11,12 @@
   padding: 1em;
   text-align: center;
   background: #333;
+  color: white;
+}
+.App.dark,
+.App.dark button {
+  background: #222;
+  border-color: white;
   color: white;
 }
 

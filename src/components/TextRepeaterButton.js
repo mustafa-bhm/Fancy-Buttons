@@ -6,6 +6,13 @@ function TextRepeaterButton(props) {
   for (let i = 0; i < repetitions; i++) {
     textAarray.push(<span key={i}> I like this text, </span>);
   }
-  return <button className="TextRepeaterButton">{textAarray}</button>;
+  const handelClick = () => {
+    setRepetitions(repetitions + 1);
+  };
+  return (
+    <button className="TextRepeaterButton" onClick={handelClick}>
+      {textAarray}
+    </button>
+  );
 }
 export default TextRepeaterButton;
